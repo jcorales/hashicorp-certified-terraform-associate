@@ -10,8 +10,8 @@ module "ec2_cluster" {
   instance_type          = "t2.micro"
   key_name               = "terraform-key"
   monitoring             = true
-  vpc_security_group_ids = ["sg-b8406afc"] # Get Default VPC Security Group ID and replace
-  subnet_id              = "subnet-4ee95470" # Get one public subnet id from default vpc and replace
+  vpc_security_group_ids = ["sg-0c9c0fa3b35cadf4d"] # Get Default VPC Security Group ID and replace
+  subnet_id              = "subnet-0f8259b47aea6b76b" # Get one public subnet id from default vpc and replace
   user_data              = file("apache-install.sh") 
   
   tags = {
